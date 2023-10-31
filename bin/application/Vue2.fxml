@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.ColorInput?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="871.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.VueController2">
+   <children>
+      <Pane focusTraversable="true" prefHeight="532.0" prefWidth="871.0">
+         <children>
+            <ImageView fx:id="imgVeloView2" fitHeight="376.0" fitWidth="543.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="567.0" layoutY="28.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="62.0" prefWidth="279.0" text="Choisissez la couleur de votre cadre et de votre fourche" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button alignment="BOTTOM_CENTER" contentDisplay="GRAPHIC_ONLY" disable="true" graphicTextGap="50.0" layoutX="567.0" layoutY="99.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" textFill="RED">
+               <effect>
+                  <ColorInput>
+                     <paint>
+                        <RadialGradient centerX="0.5" centerY="0.32857142857142857" radius="0.5">
+                           <stops>
+                              <Stop color="BLACK" />
+                              <Stop color="RED" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </paint>
+                  </ColorInput>
+               </effect>
+               <opaqueInsets>
+                  <Insets bottom="50.0" left="50.0" right="50.0" />
+               </opaqueInsets>
+            </Button>
+            <Circle fx:id="btnBleu1" accessibleRole="BUTTON" fill="#0088ff" layoutX="583.0" layoutY="141.0" onMouseClicked="#onOptionButtonClicked" radius="18.0" stroke="WHITE" strokeLineCap="BUTT" strokeType="INSIDE" />
+            <Circle fx:id="btnBlanc1" accessibleRole="BUTTON" fill="WHITE" layoutX="627.0" layoutY="141.0" onMouseClicked="#onOptionButtonClicked" radius="18.0" stroke="WHITE" strokeLineCap="BUTT" strokeType="INSIDE" />
+            <Circle fx:id="btnRouge1" accessibleRole="BUTTON" fill="RED" layoutX="670.0" layoutY="141.0" onMouseClicked="#onOptionButtonClicked" radius="18.0" stroke="WHITE" strokeLineCap="BUTT" strokeType="INSIDE" />
+            <Label layoutX="569.0" layoutY="91.0" text="Recommandé :" />
+            <Circle fx:id="btnVert1" accessibleRole="BUTTON" fill="#00ff3b" layoutX="583.0" layoutY="218.0" onMouseClicked="#onOptionButtonClicked" radius="18.0" stroke="WHITE" strokeLineCap="BUTT" strokeType="INSIDE" />
+            <Label layoutX="569.0" layoutY="171.0" text="Peinture Brillant :" />
+            <Circle fx:id="btnViolet1" accessibleRole="BUTTON" fill="#d144e4" layoutX="627.0" layoutY="218.0" onMouseClicked="#onOptionButtonClicked" radius="18.0" stroke="WHITE" strokeLineCap="BUTT" strokeType="INSIDE" />
+            <Circle fx:id="btnNoir1" accessibleRole="BUTTON" layoutX="670.0" layoutY="218.0" onMouseClicked="#onOptionButtonClicked" radius="18.0" stroke="WHITE" strokeLineCap="BUTT" strokeType="INSIDE" />
+            <Circle fx:id="btnBlanc2" accessibleRole="BUTTON" fill="WHITE" layoutX="714.0" layoutY="218.0" onMouseClicked="#onOptionButtonClicked" radius="18.0" stroke="WHITE" strokeLineCap="BUTT" strokeType="INSIDE" />
+            <Label layoutX="567.0" layoutY="247.0" text="Peinture Mat :" />
+            <Circle fx:id="btnViolet2" accessibleRole="BUTTON" fill="#d144e4" layoutX="627.0" layoutY="293.0" onMouseClicked="#onOptionButtonClicked" radius="18.0" stroke="WHITE" strokeLineCap="BUTT" strokeType="INSIDE" />
+            <Circle fx:id="btnBlanc3" accessibleRole="BUTTON" fill="WHITE" layoutX="714.0" layoutY="293.0" onMouseClicked="#onOptionButtonClicked" radius="18.0" stroke="WHITE" strokeLineCap="BUTT" strokeType="INSIDE" />
+            <Circle fx:id="btnNoir2" accessibleRole="BUTTON" layoutX="670.0" layoutY="293.0" onMouseClicked="#onOptionButtonClicked" radius="18.0" stroke="WHITE" strokeLineCap="BUTT" strokeType="INSIDE" />
+            <Circle fx:id="btnVert2" accessibleRole="BUTTON" fill="#00ff3b" layoutX="583.0" layoutY="293.0" onMouseClicked="#onOptionButtonClicked" radius="18.0" stroke="WHITE" strokeLineCap="BUTT" strokeType="INSIDE" />
+            <Label layoutX="567.0" layoutY="330.0" text="Souhaitez-vous un texte personnalisé : " />
+            <CheckBox layoutX="568.0" layoutY="361.0" mnemonicParsing="false" text="Oui " />
+            <CheckBox layoutX="568.0" layoutY="437.0" mnemonicParsing="false" text="Non" />
+            <TextArea layoutX="583.0" layoutY="388.0" prefHeight="10.0" prefWidth="195.0" />
+            <Label fx:id="lblPrix" alignment="CENTER_RIGHT" layoutX="14.0" layoutY="388.0" prefHeight="46.0" prefWidth="522.0">
+               <font>
+                  <Font name="Bell MT" size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblPrix1" alignment="CENTER_RIGHT" layoutX="14.0" layoutY="437.0" prefHeight="46.0" prefWidth="522.0">
+               <font>
+                  <Font name="Bell MT" size="27.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnRetour" layoutX="410.0" layoutY="493.0" mnemonicParsing="false" onMouseClicked="#onRetourButtonClicked" text="Retour" />
+         </children>
+         <effect>
+            <Blend />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Pane>
+   </children>
+</VBox>
